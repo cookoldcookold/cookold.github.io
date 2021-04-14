@@ -1,0 +1,233 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Кулинарный сайт "CookOld"</title>
+    <link rel="icon" href="assets/logo.png" type="image/png">
+	<link rel="stylesheet" type="text/css" href="https://rawgit.com/alvarotrigo/fullPage.js/dev/src/fullpage.css" />
+	<style>
+
+
+
+	/* Style for our header texts
+	* --------------------------------------- */
+	h1 {
+     
+        font-size: 5em;
+		font-family: arial,helvetica;
+		color: #fff;
+		margin:0;
+		padding:0;
+        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+	}
+
+    h2 {
+        font-size: 3em;
+		font-family: arial,helvetica;
+		color: #fff;
+		margin:0;
+		padding:0;
+        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+	}
+
+    h3 {
+        font-size: 2em;
+		font-family: arial,helvetica;
+		color: #fff;
+		margin:0;
+		padding:0;
+        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+	}
+    h4 {
+      font-size: 5em;
+		font-family: arial,helvetica;
+		color: #fff;
+		margin:0;
+		padding:0;
+	}
+    h5 {
+        font-size: 5em;
+		font-family: arial,helvetica;
+		color: #fff;
+		margin:0;
+		padding:0;
+	}
+
+
+    ol {
+        position: absolute;
+        top: 5%;
+        font-size: 22px;
+        font-family: Arial;
+        color: white;
+        text-align: left;
+        z-index: 9999;
+        width: 30%;
+        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    }
+	/* Centered texts in each section
+	* --------------------------------------- */
+	.section{
+		text-align:center;
+		overflow: hidden;
+	}
+
+	#myVideo{
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		top:0;
+		right:0;
+		width: 100%;
+		height: 100%;
+		background-size: 100% 100%;
+ 		background-color: black; /* in case the video doesn't fit the whole page*/
+  		background-image: /* our video */;
+  		background-position: center center;
+  		background-size: contain;
+   		object-fit: cover; /*cover video background */
+   		z-index:3;
+	}
+
+
+	/* Layer with position absolute in order to have it over the video
+	* --------------------------------------- */
+	#section0 .layer{
+		position: absolute;
+		z-index: 4;
+		width: 100%;
+		left: 0;
+		top: 43%;
+
+		/*
+		* Preventing flicker on some browsers
+		* See http://stackoverflow.com/a/36671466/1081396  or issue #183
+		*/
+		-webkit-transform: translate3d(0,0,0);
+		-ms-transform: translate3d(0,0,0);
+		transform: translate3d(0,0,0);
+	}
+
+	/*solves problem with overflowing video in Mac with Chrome */
+	#section0{
+		overflow: hidden;
+	}
+
+	/* Bottom menu
+	* --------------------------------------- */
+	#infoMenu li a {
+		color: #fff;
+	}
+
+	/* Hiding video controls
+	* See: https://css-tricks.com/custom-controls-in-html5-video-full-screen/
+	* --------------------------------------- */
+	video::-webkit-media-controls {
+	  display:none !important;
+	}
+
+	</style>
+</head>
+<body>
+
+
+<div id="fullpage">
+	<div class="section" style="background: url('../assets/cat.jpg')">
+		<div class="layer">
+			<h1>Кулинарный сайт "CookOld"</h1>
+            <h3>Пролистните вниз ради различных рецептов</h3>
+		</div>
+	</div>
+
+    <div class="section">
+		<video id="myVideo" loop muted playsinline data-autoplay>
+			<source src="assets/123.mp4" type="video/mp4">
+		</video>
+			<h2 style="position: absolute; top: 0; z-index: 9999; margin:5px 0px 0px 20px;">Как приготовить чипсы</h2>
+            <br>
+            <ol>
+                <li>Картофель очистить, вымыть и нарезать очень тонкими слайсами (кружочками) толщиной около 2 мм. </li>
+                <br>
+                <li>Нарезанный картофель выложить в миску и залить на 2-3 минуты холодной водой. Это нужно для того, чтобы вымыть лишний крахмал. Воду слить, а картофель выложить на вафельное полотенце, просушить.</li>
+                <br>
+                <li>Картофельные слайсы выложить в миску, добавить соль, сладкую молотую паприку и растительное масло, хорошо перемешать. Приправы в данном блюде можно использовать разные, на ваш вкус.</li>
+                <br>
+                <li>Противень для запекания застелить пергаментной бумагой. Выложить картофель в один слой. Накрыть вторым листом пергамента, чтобы чипсы во время запекания не подгорели. Запекать картофельные чипсы в разогретой до 180 градусов духовке 20 мин</li>
+                <br>
+                <li>Картофельные чипсы, приготовленные в духовке, остудить, выложить в миску и можно подавать на стол. Аппетитные, хрустящие чипсы очень вкусно подавать с кетчупом.</li> 
+            </ol>
+	</div>
+
+    <div class="section">
+		<video id="myVideo" loop muted playsinline data-autoplay>
+			<source src="assets/321.webm" type="video/webm">
+		</video>
+        <h2 style="position: absolute; top: 0; z-index: 9999;   margin: 5px 0px 0px 20px;">Как приготовить гамбургер</h2>
+        <br>
+            <ol>
+                <li>
+                    В мясной фарш добавляем соль и перец по вкусу, хорошо вымешиваем. Формируем шарик, расплющиваем его в руках, чтобы получилась плоская котлета. Надавливаем большим пальцем в центр котлеты, чтобы она не вздулась во время обжаривания.</li>
+                <br>
+                <li>Обжариваем котлету 4-5 минут с каждой стороны.
+                    На готовую котлету кладем тонкий кусочек сыра.</li>
+                <br>
+                <li>Помидоры нарезаем кружочками, твердый сыр - тонкими пластинами, соленый огурец - тонкими кружочками.
+                    В отдельной емкости смешиваем майонез и кетчуп.</li>
+                <br>
+                <li>Булочку разрезаем пополам и смазываем соусом из майонеза и кетчупа. Выкладываем на соус порванный руками листья салата (капусты) 
+                    На салат кладем нарезанный тонкими колечками лук. На лук выкладываем кружочек помидора. На кружочек помидора выкладываем котлету.</li>
+                <br>
+                <li>
+                    На котлету выкладываем пару ломтиков соленого огурца и ломтик сыра.</li> 
+                    <br>
+                <li>Накрываем бургер второй частью булочки. По такому же принципу формируем остальные бургеры.</li>
+            </ol>
+	</div>
+
+    <div class="section">
+		<video id="myVideo" loop muted playsinline data-autoplay>
+			<source src="assets/3.mp4" type="video/mp4">
+		</video>
+        <h2 style="position: absolute; top: 0; z-index: 9999;   margin:5px 0px 0px 20px;">Как приготовить курицу из KFC</h2>
+        <br>
+        <ol>
+            <li>
+                Куриные крылышки и грудку разрезают на три части, чтобы они хорошо прожарились, и укладывают в глубокую посуду. Добавляют соль, приправу к курице, паприку и черный перец, и все хорошо перемешивают. Оставляют мариноваться примерно на 30-40 минут. Кукурузные хлопья без добавок измельчают при помощи скалки или толкушки, и смешивают с панировочной смесью или сухарями мелкого помола. Яйца слегка взбивают в отдельной посуде.
+
+                </li>
+            <br>
+            <li>Когда курица хорошо промариновалась, кусочки филе и крылья обваливают в муке, потом во взбитых яйцах и кукурузных хлопьях с сухарями. Получается тройная панировка, которая надежно удерживает влагу внутри мяса, благодаря чему курица получается нежной и невероятно сочной. Подготовленные кусочки домашней курицы KFC опускают в разогретое масло (фритюр) и равномерно обжаривают с двух сторон до образования золотистой румяной корочки.
+
+            </li>
+            <br>
+            <li>Глубокую тарелку застилают салфеткой, которая заберет лишний жир с жареной курицы, и выкладывают аппетитные крылышки горкой. В качестве гарнира рекомендуется подавать картофель фри или картофель по-деревенски. Также можно использовать пикантный соус для остроты вкуса.
+</li>
+        
+        </ol>
+	</div>
+
+	<div class="section">
+        <video id="myVideo" loop muted playsinline data-autoplay>
+			<source src="assets/4.mp4" type="video/mp4">
+		</video>
+	  <h2 style="position: absolute; z-index: 9999; top: 0">Авторы: <br> Немтин Алексей <br> Нестеренко Илья</h1>
+	</div>
+
+<script type="text/javascript" src="https://rawgit.com/alvarotrigo/fullPage.js/dev/src/fullpage.js"></script>
+
+<script type="text/javascript">
+    var myFullpage = new fullpage('#fullpage', {
+        autoScrolling: true,
+        navigation: true,
+        showActiveTooltip: true,
+        scrollHorizontally: true,
+
+        navigationTooltips: ['Главная страница', 'Чипсы', 'Гамбургер', 'Курица', 'Конец']
+    });
+
+</script>
+
+</body>
+</html>
